@@ -1,14 +1,84 @@
-
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+   body{
+   background-color: #D2B99D;
+   padding: 20px;
+}
 
+/* FONTS */
+@font-face{
+   font-family: newsTitle;
+   src: url(../fonts/IMFellEnglishSC-Regular.ttf);
+}
+@font-face {
+   font-family: generalFont;
+   src: url(../fonts/CreteRound-Regular.ttf);
+}
+@font-face {
+   font-family: theFont;
+   src: url(../fonts/MrsSaintDelafield-Regular.ttf);
+}
 
+/* HEADER DIVISION AND TEXT */
+.upside-header-division{
+   display: flex;
+   justify-content: space-between;
+}
+.underside-header-division{
+   display: flex;
+   justify-content: space-between;
+}
+.header-line{
+   height: 0.2vw;
+   width: -webkit-fill-available;
+   background-color: black;
+   margin: auto 1vw;
+   border-bottom: #D2B99D solid 0.1vw;
+   outline: black solid 0.1vw;
+}
+.header-right-content{
+   height: fit-content;
+   margin: auto 0;
+}
+.header-right-content > small{
+   font-family:'Times New Roman', Times, serif;
+   font-size: 1.2vw;
+   margin: 0 3px;
+}
+.header-left-content{
+   height: fit-content;
+   margin: auto 0;  
+}
+.header-left-content > small{
+   font-family:'Times New Roman', Times, serif;
+   font-size: 1.2vw;
+   margin: 0 3px;
+}
 
+/* TITLE NEWSPAPER */
+.the{
+   font-size: 5vw;
+   font-family: theFont;
+}
+.newspaper-title{
+   font-size: 6vw;
+   width: fit-content;
+   margin: 0 auto;
+   font-family: newsTitle;
+}
+.under-title{
+   font-size: 2vw;
+   width: fit-content;
+   margin: 0 auto;
+   font-family: generalFont;
+}
 
-
+/* MAIN ARTICLE */
+article{
+   border: solid black 5px;
+}
 
 
 

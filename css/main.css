@@ -20,6 +20,14 @@
    font-family: theFont;
    src: url(../fonts/MrsSaintDelafield-Regular.ttf);
 }
+@font-face {
+   font-family: articlesFont;
+   src: url(../fonts/articles-font/UnifrakturMaguntia-Regular.ttf);
+}
+@font-face {
+   font-family: articlesTitleFont;
+   src: url(../fonts/articles-font/titles-of-articles/Solway-Medium.ttf);
+}
 
 /* HEADER DIVISION AND TEXT */
 .upside-header-division{
@@ -29,6 +37,8 @@
 .underside-header-division{
    display: flex;
    justify-content: space-between;
+   margin-top: 20px;
+   margin-bottom: 20px;
 }
 .header-line{
    height: 0.2vw;
@@ -38,41 +48,41 @@
    border-bottom: #D2B99D solid 0.1vw;
    outline: black solid 0.1vw;
 }
-.header-right-content{
-   height: fit-content;
-   margin: auto 0;
-}
-.header-right-content > small{
-   font-family:'Times New Roman', Times, serif;
-   font-size: 1.2vw;
-   margin: 0 3px;
-}
-.header-left-content{
-   height: fit-content;
-   margin: auto 0;  
-}
-.header-left-content > small{
-   font-family:'Times New Roman', Times, serif;
-   font-size: 1.2vw;
-   margin: 0 3px;
-}
 
 /* TITLE NEWSPAPER */
 .the{
-   font-size: 5vw;
+   font-size: 80px;
    font-family: theFont;
 }
 .newspaper-title{
-   font-size: 6vw;
+   font-size: 60px;
    width: fit-content;
    margin: 0 auto;
    font-family: newsTitle;
+   display: inline-block;
+}
+@media (max-width: 576px){
+   .newspaper-title-container {
+      text-align: center!important;
+   }
 }
 .under-title{
-   font-size: 2vw;
+   font-size: 25px;
    width: fit-content;
    margin: 0 auto;
    font-family: generalFont;
+}
+
+/* NAVBAR */
+nav{
+   font-family: generalFont;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+nav li{
+   margin-top: auto !important;
+   margin-bottom: auto !important;
+   list-style-type: none;
 }
 
 /* MAIN ARTICLE */
@@ -80,13 +90,60 @@ article{
    border: solid black 5px;
 }
 
+/* SECTION */
+h2{
+   font-family: articlesTitleFont;
+   display: inline;
+   font-size: 40px;
+   margin: 0px 0px 0px 2vw;
+}
+article p{
+   font-family: articlesFont;
+   font-size: 20px;
+   text-align: justify;
+}
+section{
+   padding: 10px;
+}
 
+/* POINTERS */
+.pointing-rightside{
+   transform: rotate(90deg);
+   margin-left: 2vw;
+   display: inline;
+}
+@media(max-width: 900px) {
+   .regular-size{
+      max-height: 70px !important;
+   }
+}
+.regular-size{
+   height: 120px;
+}
+/* IMAGES */
+.mp_logo{
+ width: 200px;
+ margin: 0 auto;
+}
+.img-center{
+text-align: center;}
 
+/* PARALLAX MAGIC EFFECT! */
+.parallax_magic {
+   /* The image used */
+   background-image: url("../img/hogwarts.gif");
+ 
+   /* Set a specific height */
+   min-height: 400px; 
+ 
+   /* Create the parallax scrolling effect */
+   background-attachment: fixed;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: contain;
 
-
-
-
-
-
+   margin-top: 50px;
+   margin-bottom: 40px;
+ }
 
 

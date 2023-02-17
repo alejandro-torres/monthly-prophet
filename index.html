@@ -12,50 +12,123 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
 
   <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
 <body>
+  <!-- ======HEADER====== -->
   <header class="text-center">
-    <div class="upside-header-division">
-      <div class="header-left-content">
-        <small>bewitch</small><small>beguile</small>
-      </div>
+    <div class="upside-header-division"> 
       <div class="header-line"></div>
       <p class="the">The</p>
       <div class="header-line"></div>
-      <div class="header-right-content">
-        <small>spellbind</small><small>conjure</small><small>enchant</small><small>divinate</small>
-      </div>
     </div>
 
-    <h1 class="newspaper-title">THE MONTHLY PROPHET</h1>
+    <div class="row">
+      <h1 class="newspaper-title">MONTHLY PROPHET</h1>
+    </div>
+
+    <div class="row">
+      <img src="./img/logo_MP.png" class="mp_logo img-fluid">
+    </div>
 
     <p class="under-title">*THE WIZARD WORLD'S BEGUILING BROADSHEET OF CHOICE*</p>
 
     <div class="underside-header-division">
-      <div class="header-left-content">
-        <small>spellbind</small><small>conjure</small><small>enchant</small><small>divinate</small>
-      </div>
       <div class="header-line"></div>
-      <div class="header-right-content">
-        <small>spellbind</small><small>conjure</small><small>enchant</small><small>divinate</small>
-      </div>
     </div>
   </header>
 
-  <nav>
-
+  <!-- ======NAVIGATION BAR====== -->
+  <nav class="container-fluid text-center">
+    <div class="row">
+      <li class="col-sm-2">
+        FOR ZODIAC ASPECTS TURN TO PAGE 10
+      </li>
+      <li class="col-sm-3">
+        "MUGGLES AREN'T AS STUPID AS YOU MAY THINK" SAYS MINISTRY REPORT
+      </li>
+      <li class="col-sm-2">
+        <img class="img-fluid" src="./img/stick.png">
+      </li>
+      <li class="col-sm-3">
+        <img class="img-fluid" src="./img/logo-nimbus.svg">
+      </li>
+      <li class="col-sm-2">
+        20%OFf BUTERBEER AT THE THREE BROOMSTICKS
+      </li>
+    </div>
   </nav>
   
-  <article>
+  <!-- ======ARTICLES SECTION====== -->
+  <article class="container-fluid">
+
+    <!-- DOUBLE SECTION -->
+    <div class="row">
+      <!-- FIRST COL -->
+      <div class="col-lg-6">
+        <section id="page_1">
+          <img class="pointing-rightside regular-size img-fluid" src="./img/pointer_inverse.png">
+          <h2>FLYING FORD ANGLIA MYSTIFIES MUGGLES</h2>
+          <div class="row">
+            <p class="col-sm-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi incidunt veritatis impedit sunt voluptates quisquam excepturi nostrum aliquam unde, architecto ab voluptatum. Magni fuga reiciendis optio voluptatum illo maxime!</p>
+            <div class="col-sm-6">
+              <img class="img-fluid" src="./img/ford_anglia.png">
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- SECOND COL -->
+      <div class="col-lg-6">
+        <section id="page_2">
+          <img class="pointing-rightside regular-size img-fluid" src="./img/pointer_inverse.png">
+          <h2>FLYING FORD ANGLIA MYSTIFIES MUGGLES</h2>
+          <div class="row">
+            <p class="col-sm-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi incidunt veritatis impedit sunt voluptates quisquam excepturi nostrum aliquam unde, architecto ab voluptatum. Magni fuga reiciendis optio voluptatum illo maxime!</p>
+            <div class="col-sm-6">
+              <img class="img-fluid" src="./img/ford_anglia_move.gif">
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- PARALLAX MAGIC EFFECT! -->
+    <div class="row">
+      <section id="page_3">
+        <img class="pointing-rightside regular-size img-fluid" src="./img/pointer_inverse.png">
+        <h2>NEW YEAR IN HOGWARTS</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, aliquid. Repellat id corrupti, placeat numquam commodi a nobis tempora fuga quidem eos, eaque, facilis facere eveniet? Sequi asperiores cupiditate sunt!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, aliquid. Repellat id corrupti, placeat numquam commodi a nobis tempora fuga quidem eos, eaque, facilis facere eveniet? Sequi asperiores cupiditate sunt!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, aliquid. Repellat id corrupti, placeat numquam commodi a nobis tempora fuga quidem eos, eaque, facilis facere eveniet? Sequi asperiores cupiditate sunt!
+        </p>
+      </section>
+    </div>
+    <div class="parallax_magic"></div>
+
+    <!-- SINGLE SECTION -->
+    <section id="page_1">
+      <img class="pointing-rightside regular-size img-fluid" src="./img/pointer_inverse.png">
+      <h2>GRINGOTTS SAFEST PLACE!</h2>
+      <div class="row">
+        <p class="col-sm-6">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi incidunt veritatis impedit sunt voluptates quisquam excepturi nostrum aliquam unde, architecto ab voluptatum. Magni fuga reiciendis optio voluptatum illo maxime!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem commodi incidunt veritatis impedit sunt voluptates quisquam excepturi nostrum aliquam unde, architecto ab voluptatum. Magni fuga reiciendis optio voluptatum illo maxime!
+        </p>
+        <div class="col-sm-6 img-center">
+          <img class="img-fluid" src="./img/gringotts.gif">
+        </div>
+      </div>
+    </section>
+   
+
 
   </article>
+  <!-- ======ARTICLES SECTION ENDS====== -->
 
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
   <script src="js/vendor/bootstrap.min.js"></script>

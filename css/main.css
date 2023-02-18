@@ -83,6 +83,10 @@ nav li{
    margin-top: auto !important;
    margin-bottom: auto !important;
    list-style-type: none;
+   font-size: 18px;
+}
+nav b{
+   font-size: 23px;
 }
 
 /* MAIN ARTICLE */
@@ -131,7 +135,12 @@ section{
  margin: 0 auto;
 }
 .img-center{
-text-align: center;}
+text-align: center;
+}
+
+.img-article{
+   filter: grayscale(1);
+}
 
 /* PARALLAX MAGIC EFFECT! */
 .parallax_magic {
@@ -149,6 +158,8 @@ text-align: center;}
 
    margin-top: 50px;
    margin-bottom: 40px;
+
+   filter: grayscale(1);
  }
 
 

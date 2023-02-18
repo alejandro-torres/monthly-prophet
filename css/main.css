@@ -91,11 +91,16 @@ article{
 }
 
 /* SECTION */
-h2{
+h2.with-pointer{
    font-family: articlesTitleFont;
    display: inline;
    font-size: 40px;
    margin: 0px 0px 0px 2vw;
+}
+h2{
+   font-family: articlesTitleFont;
+   display: inline;
+   font-size: 40px;
 }
 article p{
    font-family: articlesFont;
